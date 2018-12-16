@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cifrado Playfair</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+    <div>
+        <form>
+            <div>
+                <label>Texto a cifrar</label>
+                <input type="text" name="" id="texto" >
+            </div>
+           <div class="contenedor">
+
+                <div class="cesar">
+                    <fieldset>
+                        <legend>Cifrado Playfair</legend>
+                        <div>
+                            <label>Desplazamiento</label>
+                            <input type="number" name="" id="desp" >
+                        </div>
+                        <div>
+                            <textarea placeholder="texto cifrado" id="textoCifrado" ></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="inverso">
+                    <fieldset>
+                        <legend>Inverso</legend>
+                        <div>
+                            <textarea placeholder="texto cifrado" id="textoInverso" ></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="inverso">
+                    <fieldset>
+                        <legend>Grupos</legend>
+                        <div>
+                            <label>Grupo</label>
+                            <input type="number" name="" id="nGrupos" >
+                        </div>
+                        <div>
+                            <textarea placeholder="Grupos" id="grupos" ></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+           </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        const electron = require('electron')
+        const {ipcRenderer} = electron  
+
+        const form = document.querySelector('form')
+        var salida = document.querySelector('#textoCifrado')
+        var texto = document.querySelector('#texto')        
+        var desplazamiento = document.querySelector('#desp')
+        var inverso = document.querySelector('#textoInverso')
+        var grupos = document.querySelector('#grupos')
+        var nGrupos = document.querySelector('#nGrupos')
+        texto.addEventListener( 'keyup', function ( evento ) {
+            salida.innerHTML = texto.value
+            grupos.innerHTML = texto.value
+            inverso.innerHTML = texto.value
+                                    .split('')
+                                    .reverse('')
+                                    .join('')
+
+        }, false );
+
+        desplazamiento.addEventListener('keyup', function() {
+            if( desplazamiento.value >= 0 || desplazamiento.value != undefined )
+                salida.innerHTML = cesar( texto.value, desplazamiento.value )
+            else 
+                salida.innerHTML = texto.value
+        }, false);
+
+        nGrupos.addEventListener('keyup', function() {
+            if( texto.value.length == nGrupos.value || nGrupos.value > texto.value.length ) {
+                grupos.innerHTML = texto.value
+                                    .split('')
+                                    .reverse('')
+                                    .join('')
+            } else {
+                 grupos.innerHTML = texto.value
+            }
+        }, false);
+
+
+    </script>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>

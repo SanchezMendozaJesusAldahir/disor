@@ -1,0 +1,9 @@
+.contenedor {
+    display: inline-grid;
+}
+.cesar {
+    width: 50%;
+}
+.inverso {
+    width: 50%;
+}

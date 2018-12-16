@@ -1,0 +1,9 @@
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\bin\Debug\CCesar.exe.config
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\bin\Debug\CCesar.exe
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\bin\Debug\CCesar.pdb
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\obj\Debug\CCesar.Form1.resources
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\obj\Debug\CCesar.Properties.Resources.resources
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\obj\Debug\CCesar.csproj.GenerateResource.Cache
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\obj\Debug\CCesar.exe
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\obj\Debug\CCesar.pdb
+c:\users\jesus\documents\visual studio 2012\Projects\CCesar\CCesar\obj\Debug\CCesar.csprojResolveAssemblyReference.cache

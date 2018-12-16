@@ -1,0 +1,6 @@
+﻿  Cesar.cpp
+  GruposInversos.cpp
+c:\users\usuario\desktop\tec\noveno\patrones\programasc++\cesar\cesar\gruposinversos.cpp(11): warning C4018: '<': no coinciden signed/unsigned
+  Generando código...
+  Alfabeto.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  Cesar.vcxproj -> C:\Users\Usuario\Desktop\TEC\Noveno\Patrones\Programasc++\Cesar\Debug\Cesar.exe
